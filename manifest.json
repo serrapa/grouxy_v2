@@ -1,0 +1,37 @@
+{
+  "name": "Groxy",
+  "description": "Oh damn group!",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "tabs",
+    "proxy",
+    "contextMenus",
+    "storage",
+    "<all_urls>"
+  ],
+  "options_page": "options.html",
+  "options_ui": {
+     "page": "options.html",
+     "browser_style": false,
+     "open_in_tab": true
+  },
+  "browser_action": {
+    "default_icon": {            
+      "32": "images/base.png" 
+    },
+    "default_title": "Groxy!",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+        "48": "images/base.png",
+        "16": "images/base16.png"
+  },
+  "background": {
+    "page" : "background.html",
+    "persistent": true
+  }
+}
